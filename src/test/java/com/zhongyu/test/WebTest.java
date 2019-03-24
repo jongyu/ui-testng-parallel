@@ -19,9 +19,9 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
-public class SeleniumTest {
+public class WebTest {
 
-    private static Logger logger = LoggerFactory.getLogger(SeleniumTest.class);
+    private static Logger logger = LoggerFactory.getLogger(WebTest.class);
     private RemoteWebDriver driver;
     //Selenium grid
     private static final String hostHub = "https://localhost/wd/hub";
