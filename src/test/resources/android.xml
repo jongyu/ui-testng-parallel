@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Android Suite" verbose="1" thread-count="2" parallel="tests">
+    <listeners>
+
+    </listeners>
+    <test name="Test on Android 8">
+        <parameter name="host" value="http://127.0.0.1:4723/wd/hub"/>
+        <parameter name="deviceName" value="One Plus 6"/>
+        <parameter name="deviceVersion" value="8.1.0"/>
+        <parameter name="udid" value="One Plus 6 UDID"/>
+        <parameter name="systemPort" value="8100"/>
+        <classes>
+            <class name="com.zhongyu.test.AndroidTest"/>
+        </classes>
+    </test>
+    <test name="Test on Android 9">
+        <parameter name="host" value="http://127.0.0.1:4724/wd/hub"/>
+        <parameter name="deviceName" value="Xiaomi 9"/>
+        <parameter name="deviceVersion" value="9"/>
+        <parameter name="udid" value="Xiaomi 9 UDID"/>
+        <parameter name="systemPort" value="8200"/>
+        <classes>
+            <class name="com.zhongyu.test.AndroidTest"/>
+        </classes>
+    </test>
+</suite>

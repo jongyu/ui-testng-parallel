@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="IOS Suite" verbose="1" thread-count="2" parallel="tests">
+    <listeners>
+
+    </listeners>
+    <test name="Test on iPhone 8">
+        <parameter name="host" value="http://127.0.0.1:4723/wd/hub"/>
+        <parameter name="deviceName" value="iPhone 8"/>
+        <parameter name="deviceVersion" value="11.2.6"/>
+        <parameter name="udid" value="iPhone 8 UDID"/>
+        <parameter name="wdaLocalPort" value="8100"/>
+        <classes>
+            <class name="com.zhongyu.test.IOSTest"/>
+        </classes>
+    </test>
+    <test name="Test on iPhone XR">
+        <parameter name="host" value="http://127.0.0.1:4724/wd/hub"/>
+        <parameter name="deviceName" value="iPhone XR"/>
+        <parameter name="deviceVersion" value="12.2"/>
+        <parameter name="udid" value="iPhone XR UDID"/>
+        <parameter name="wdaLocalPort" value="8200"/>
+        <classes>
+            <class name="com.zhongyu.test.IOSTest"/>
+        </classes>
+    </test>
+</suite>

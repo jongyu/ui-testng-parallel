@@ -8,6 +8,11 @@ docker run -d --net grid -e HUB_HOST=selenium-hub -v /dev/shm:/dev/shm selenium/
 docker run -d --net grid -e HUB_HOST=selenium-hub -v /dev/shm:/dev/shm selenium/node-firefox:3.141.59-mercury
 ```
 
+## Gen Android Device UDID
+```bash
+adb device
+```
+
 ## 运行测试
 ```bash
 mvn clean test

@@ -6,13 +6,13 @@
     <test name="ChromeBrowser">
         <parameter name="browser" value="Chrome"/>
         <classes>
-            <class name="com.zhongyu.test.BaiduTest"/>
+            <class name="com.zhongyu.test.SeleniumTest"/>
         </classes>
     </test>
     <test name="FirefoxBrowser">
         <parameter name="browser" value="Firefox"/>
         <classes>
-            <class name="com.zhongyu.test.BaiduTest"/>
+            <class name="com.zhongyu.test.SeleniumTest"/>
         </classes>
     </test>
 </suite>
