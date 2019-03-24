@@ -1,4 +1,4 @@
-# Selenium并行测试
+# UI自动化并行测试（Web、iOS、Android）
 
 ## 准备Selenium Hub
 ```bash
